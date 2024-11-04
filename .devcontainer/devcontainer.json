@@ -16,7 +16,6 @@
     },
 
 
-
   // Configure tool-specific properties.
   "customizations": {
     "vscode": {
@@ -29,7 +28,10 @@
         "doi.fileheadercomment",
         "donjayamanne.githistory",
         "charliermarsh.ruff"
-      ]
+      ],
+      "settings": {
+        "terminal.integrated.defaultProfile.linux": "bash"
+      }
     }
   }
 }
