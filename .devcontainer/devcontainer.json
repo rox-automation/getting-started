@@ -11,7 +11,8 @@
 
     // add workspace to pythonpath
   "containerEnv": {
-      "PYTHONPATH": "${containerWorkspaceFolder}/libraries"
+      "PYTHONPATH": "${containerWorkspaceFolder}/lib",
+      "VCAN_IP": "224.0.0.1"
     },
 
 
