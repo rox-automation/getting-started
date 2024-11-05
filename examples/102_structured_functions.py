@@ -1,4 +1,11 @@
 # type: ignore
+"""
+Example of structured code using only functions.
+
+Note: typehints are not used here on purpose to demonstate limited readability.
+
+"""
+
 import random
 from enum import Enum, auto
 from time import time
