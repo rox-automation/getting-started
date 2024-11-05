@@ -1,0 +1,31 @@
+#--------------mypy configuration----------------
+[tool.mypy]
+# Global options can be specified here
+disallow_untyped_defs = true
+ignore_missing_imports = true
+
+
+#------------------pylint configuration----------------
+[tool.pylint.messages_control]
+disable = [
+    "missing-module-docstring",
+    "missing-class-docstring",
+    "missing-function-docstring",
+    "invalid-name",
+    "logging-fstring-interpolation",
+    "unused-argument",
+    "import-outside-toplevel",
+    "broad-except",
+    "line-too-long",
+    "useless-super-delegation",
+]
+[tool.pylint.typecheck]
+
+ignored-modules = ["orjson"]
+
+#------------------pyright configuration----------------
+[tool.pyright]
+reportMissingModuleSource = false
+reportMissingImports = false
+reportAttributeAccessIssue = false
+reportPossiblyUnboundVariable = false

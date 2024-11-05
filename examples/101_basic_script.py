@@ -20,6 +20,11 @@ write a python script that helps to learn binary to hex conversion.  Do it like 
 
 ---- END PROMPT ---
 
+The main problem with this code is that it can only be run as a script, meaning
+that all the code is executed at every run. This is not a good practice for larger, more complex
+programs. It is better to use functions to encapsulate code and only run the parts that are needed.
+
+In the next example, we will refactor this code to use functions and show how to run it as a module.
 
 """
 
