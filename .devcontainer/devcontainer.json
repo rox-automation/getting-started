@@ -29,7 +29,9 @@
         "donjayamanne.githistory",
         "tamasfe.even-better-toml",
         "ms-python.pylint",
-        "ms-python.isort"
+        "ms-python.isort",
+        "ms-python.mypy-type-checker",
+        "ms-python.black-formatter"
       ],
       "settings": {
         "terminal.integrated.defaultProfile.linux": "bash"
