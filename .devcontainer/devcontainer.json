@@ -27,7 +27,9 @@
         "mhutchie.git-graph",
         "doi.fileheadercomment",
         "donjayamanne.githistory",
-        "charliermarsh.ruff"
+        "tamasfe.even-better-toml",
+        "ms-python.pylint",
+        "ms-python.isort"
       ],
       "settings": {
         "terminal.integrated.defaultProfile.linux": "bash"

@@ -18,6 +18,7 @@ disable = [
     "broad-except",
     "line-too-long",
     "useless-super-delegation",
+    "too-few-public-methods"
 ]
 [tool.pylint.typecheck]
 
