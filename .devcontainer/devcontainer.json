@@ -1,21 +1,17 @@
 {
   "initializeCommand": "mkdir -p /var/tmp/container-extensions", // executed on HOST system
-
   "image": "roxauto/python-dev:latest",
   // "runArgs": ["--network", "host", "--privileged"],
-
   "mounts": [
-    "source=/var/tmp/container-extensions,target=/home/dev/.vscode-server/extensions,type=bind,consistency=cached"
+    "source=/var/tmp/container-extensions,target=/home/dev/.vscode-server/extensions,type=bind,consistency=cached",
+    "source=${localEnv:HOME}/.ssh,target=/home/dev/.ssh,type=bind,consistency=cached,readonly"
   ],
   "postCreateCommand": ".devcontainer/init_container.sh",
-
-    // add workspace to pythonpath
+  // add workspace to pythonpath
   "containerEnv": {
-      "PYTHONPATH": "${containerWorkspaceFolder}/lib",
-      "VCAN_IP": "224.0.0.1"
-    },
-
-
+    "PYTHONPATH": "${containerWorkspaceFolder}/lib",
+    "VCAN_IP": "224.0.0.1"
+  },
   // Configure tool-specific properties.
   "customizations": {
     "vscode": {
